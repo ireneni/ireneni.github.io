@@ -1,2 +1,53 @@
 /* importt fonts from fonts.css file */
 @import url(./fonts.css);
+html {
+    scroll-behavior: smooth;
+}
+@viewport {
+    zoom: 1;
+}
+
+.nav {
+    padding-left: 600px;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    background-color: #F4F2EA;
+    color: #5C8D89; 
+  }
+  .nav-item {
+    position: relative;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;   
+    font-size: 22px;
+    font-weight: normal;
+  }
+  .nav-item:hover:after {
+    width: 80%;
+    left: 12%;
+  }
+  .nav-item:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #BEBEE1;
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
+    width: 0;
+  }
+
+
+a:active,
+a:visited,
+a:link {
+  color: #5C8D89;
+  text-decoration: none;
+}
+
+.main {
+    margin-top: 30px;
+}
+

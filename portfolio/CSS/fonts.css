@@ -2,7 +2,10 @@
 
 @font-face{
     font-family: "FrankRuhl";
-    src: '../fonts/FrankRuhl/FrankRuhlLibre-Regular.ttf';
+    src: url("/fonts/FrankRuhl/FrankRuhlLibre-Regular.ttf");
+    
+    font-family: "Nunito";
+    src: url("/fonts/Nunito/Nunito-Regular.ttf");
 
 
 }
