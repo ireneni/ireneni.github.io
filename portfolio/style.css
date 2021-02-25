@@ -88,14 +88,17 @@ html {
 }
 
 .profile-p {
+  display: inline-flex;
+  flex-direction: column;
   font-family: 'Frank Ruhl Libre';   
   font-size: 25px;
   font-weight: normal;
   color: #383838;
   }
-#para{
+.profile-p > div{
   margin-bottom: 10px;
 }
+
 #profile-button{
   max-width: 28%;
   height: auto;
