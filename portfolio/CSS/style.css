@@ -7,47 +7,93 @@ html {
     zoom: 1;
 }
 
-.nav {
-    padding-left: 600px;
-    z-index: 100;
-    width: 100%;
-    position: fixed;
-    background-color: #F4F2EA;
-    color: #5C8D89; 
+  .header {
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: #C6E2D4;
+    border-bottom-style: solid;
+
   }
-  .nav-item {
-    position: relative;
-    display: inline-block;
+  .left-header {
+    display: flex;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;   
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .left-item {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0 1% 50%;
+    color: #5C8D89;
+
+  }
+  .right-header {
+    display: flex;
+    width: 50%;
+    padding: 0 0 0 10%;
     font-family: 'Nunito', sans-serif;   
     font-size: 22px;
     font-weight: normal;
   }
-  .nav-item:hover:after {
-    width: 80%;
-    left: 12%;
-  }
-  .nav-item:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #BEBEE1;
-    transition: width 0.4s ease 0s, left 0.4s ease 0s;
-    width: 0;
-  }
 
-
-a:active,
-a:visited,
-a:link {
-  color: #5C8D89;
-  text-decoration: none;
+  .right-item {
+    display: flex;
+    padding-right: 10%;
+    padding-top: 3%
+  }
+  
+  a:visited,
+  a:link {
+    color: #5C8D89;
+    text-decoration: none;
+  }
+  a:active,
+  a:hover {
+    color: #EC9C21;
+  } 
+  
+  body {
+    background-color: #F4F2EA;
+  }
+  
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.main {
-    margin-top: 30px;
+.h1{
+  display: flex;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;   
+  font-size: 52px;
+  font-weight: normal;
+  color: #74B49B;
+  padding: 6% 0 0 25%;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Frank Ruhl Libre';   
+  font-size: 25px;
+  font-weight: normal;
+  color: #383838;
+  padding: 5px 25% 0 25%;
+}
+
+#profile-button{
+  max-width: 28%;
+  height: auto;
+  padding-top: 8px;
+}
+
+#emoji {
+  padding-left: 20px;
 }
 
