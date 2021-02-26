@@ -1,8 +1,10 @@
 html {
     scroll-behavior: smooth;
+  
 }
 @viewport {
-    zoom: 1;
+  width: device-width;
+  zoom: 1;
 }
 
   .header {
@@ -105,10 +107,44 @@ img.resize {
 }
 
 #profile-button{
-  max-width: 28%;
+  max-width: 188px;
   height: auto;
   padding-top: 8px;
 }
+
+.projects{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-evenly;
+  width: 56%;
+  padding: 26px 0 0 24.8%;
+
+}
+
+.project-item{
+  padding-bottom: 26px;
+}
+
+img {
+  max-width:88%;
+  max-height: auto;
+}
+
+.h2{
+  font-family: 'Frank Ruhl Libre';   
+  font-size: 18px;
+  font-weight: normal;
+  color: #5C8D89;
+}
+
+.h3{
+  font-family: 'Nunito', sans-serif; 
+  font-size: 28px;
+  font-weight: normal;
+  color: #383838;
+}
+
+
 
 .arrow-wrap {  
   padding-left:50%;
@@ -137,7 +173,7 @@ img.resize {
 
 .arrow-down {
   transform: rotate(-45deg);
-  bottom: 80px;
+  bottom: 70px;
 }
 
 @-webkit-keyframes arrow {
