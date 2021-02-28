@@ -10,10 +10,12 @@ html {
   .header {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    min-width: 100%;
+    background-color: #F4F2EA;
     border-bottom-width: 1px;
     border-bottom-color: #C6E2D4;
     border-bottom-style: solid;
+    padding-top: 6px;
 
   }
   .left-header {
@@ -35,7 +37,7 @@ html {
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    padding: 0 25% 0 0;
+    padding: 2px 25% 0 0;
     font-family: 'Nunito', sans-serif;   
     font-size: 22px;
     font-weight: normal;
@@ -47,19 +49,28 @@ html {
     padding-top: 4px;
   }
   
-  a:visited,
-  a:link {
+  .header a:visited,
+  .header a:link {
     color: #5C8D89;
     text-decoration: none;
   }
-  a:active,
-  a:hover {
+  .header a:active,
+  .header a:hover {
     color: #EC9C21;
   } 
   
-  body {
-    background-color: #F4F2EA;
+  body#page1{
+    background-color:#F4F2EA;
+    margin: 0;
+    padding: 0;
   }
+
+  body#page2{
+    background-color: #EE978A;
+    margin: 0;
+    padding: 0;
+  }
+
   
 .intro {
   display: flex;
@@ -83,6 +94,15 @@ img.resize {
   font-size: 52px;
   font-weight: normal;
   color: #74B49B;
+  padding: 6% 0 0 25%;
+}
+
+.h4{
+  display: flex;
+  font-family: 'Nunito', sans-serif;   
+  font-size: 52px;
+  font-weight: normal;
+  color: #F4F2EA;
   padding: 6% 0 0 25%;
 }
 
@@ -110,6 +130,7 @@ img.resize {
   max-width: 188px;
   height: auto;
   padding-top: 8px;
+  outline: none;
 }
 
 .projects{
@@ -144,17 +165,109 @@ img {
   color: #383838;
 }
 
+.about{
+  position: absolute;
+  top: 56px; /* Header Height */
+  bottom: 0px;
+  width: 100%;
+}
 
+.h5{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  font-family: 'Nunito', sans-serif;   
+  font-size: 52px;
+  font-weight: normal;
+  color: #F4F2EA;
+  padding: 6% 0 0 25%;
+}
+
+.about-intro {
+  position: absolute;
+  top: 172px;
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  padding-left: 25%;
+}
+
+.about-p {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'Frank Ruhl Libre';   
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFFFFF;
+  }
+.about-p > div{
+  margin-bottom: 24px;
+}
+
+#about-button{
+  display:flex;
+  max-width: 188px;
+  height: auto;
+  padding-top: 18px;
+  outline: none;
+}
+
+#rectangle{
+  position:absolute;
+  top:0px;
+  width:280px;
+  margin-left:57%;
+  bottom:0px;
+  background:#5C8D89;
+}
+
+#leaf{
+  position: absolute;
+  top:72px;
+  margin-left:57.5%;
+  width: 268px;
+  height: auto;
+}
+
+.quick-p {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  top:356px;
+  bottom:0px;
+  width:260px;
+  margin-left:58.5%;
+  font-family: 'Frank Ruhl Libre';   
+  font-size: 17px;
+  font-weight: normal;
+  color: #FFFFFF;
+  }
+.quick-p > div{
+  margin-bottom: 2px;
+}
+
+.quick-p a:visited, .quick-p a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.quick-p a:active, .quick-p a:hover {
+  color: #EC9C21;
+} 
+
+#spacer{
+  margin-top: 16px;
+}
 
 .arrow-wrap {  
   padding-left:50%;
   position: relative;
-  bottom: -50px;
+  bottom: -90px;
   -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
   -moz-animation: arrow 0.5s 1s infinite ease-out alternate;
   -o-animation: arrow 0.5s 1s infinite ease-out alternate;
   animation: arrow 0.5s 1s infinite ease-out alternate;
 }
+
 
 .arrow-wrap:hover {
   -webkit-animation-play-state: paused;
