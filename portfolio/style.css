@@ -293,6 +293,17 @@ img:hover {
   color: #EC9C21;
 } 
 
+.socials{
+  display:flex;
+  padding-top: 18px;
+}
+
+#social-button{
+  padding-right: 16px;
+  outline: none;
+
+}
+
 #spacer{
   margin-top: 16px;
 }
