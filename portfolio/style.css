@@ -16,6 +16,7 @@ html {
     border-bottom-color: #C6E2D4;
     border-bottom-style: solid;
     padding-top: 6px;
+    z-index: 999;
 
   }
   .left-header {
@@ -151,6 +152,7 @@ img.resize {
   max-width:92%;
   max-height: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .item-description{
@@ -160,6 +162,7 @@ img.resize {
   font-size: 16px;
   font-weight: lighter;
   color: #ffffff;
+
 }
 
 img {
@@ -204,6 +207,8 @@ img:hover {
   color: #383838;
 }
 
+/* PROJECTS */
+
 .about{
   position: absolute;
   top: 56px; /* Header Height */
@@ -247,16 +252,17 @@ img:hover {
   display:flex;
   max-width: 188px;
   height: auto;
-  padding-top: 18px;
+  padding-top: 8px;
   outline: none;
 }
 
 #rectangle{
-  position:absolute;
+  position:fixed;
   top:0px;
   width:280px;
   margin-left:57%;
   bottom:0px;
+  z-index: -1;
   background:#5C8D89;
 }
 
