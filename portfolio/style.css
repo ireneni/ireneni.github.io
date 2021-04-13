@@ -321,7 +321,7 @@ img:hover {
 .about{
   position: absolute;
   top: 56px; /* Header Height */
-  bottom: 0px;
+  bottom:0px;
   width: 100%;
 }
 
@@ -410,7 +410,7 @@ img:hover {
 
 .socials{
   display:flex;
-  padding-top: 18px;
+  padding-top: 16px;
 }
 
 #social-button{
@@ -423,13 +423,95 @@ img:hover {
 #spacer{
   margin-top: 16px;
 }
+@media screen and (max-width : 648px)
+{
+  .h5{
+    font-size: 36px;
+    padding-left: 18%;
+  }
+  .about-intro {
+    top: 86px;
+    padding-left: 18%;
+    width: 62%
+  }
+  .about-p {
+    font-size: 17px;
+  }
+  .mobile-p {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Frank Ruhl Libre';   
+    font-size: 17px;
+    padding: 4% 0 0 0;
+    margin-left: -29%;
+    width: 161.2%;
+  }
+  .mobile-p span{
+    padding: 4% 18% 8% 18%;
+  }
+  .mobile-p a:visited, .mobile-p a:active, .mobile-p a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  #rectangle{
+    display:none;
+  }
+  .mobile-p span { 
+    background-color:#5C8D89; 
+  }
+  #about-button{
+    max-width: 150px;
+    padding-top: 0px;
+  }
+  #leaf{
+    top:72px;
+    margin-left:38%;
+    height: auto;
+    width: 60% ;
+    opacity: 0.8;
+  }
+  .socials{
+    padding-top: 10px;
+  }
+  .quick-p {
+    display:none;
+  }
+}
+@media screen and (min-width: 648px) and (max-width: 1280px)
+{
+  .mobile-p {
+    display: none;
+  }
+  .socials{
+    padding-bottom: 36px;
+  }
+  .h5{
+    padding-left: 18%;
+  }
+  .about-intro {
+    top: 142px;
+    padding-left: 18%;
+    width: 36%;
+  }
 
+}
+@media screen and (min-width: 1280px) and (max-width: 3600px)
+{
+  .mobile-p {
+    display: none;
+  }
+  .socials{
+    padding-bottom: 36px;
+  }
+}
 @media screen and (max-width : 540px)
 {
   .arrow-wrap{
     display: none;
   }
 }
+
 .arrow-wrap {  
   padding-left:50%;
   position: relative;
