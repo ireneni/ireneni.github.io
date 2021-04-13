@@ -7,6 +7,18 @@ html {
   /* zoom: 1; */
 }
 
+body#page1{
+  background-color:#F4F2EA;
+  margin: 0;
+  padding: 0;
+}
+
+body#page2{
+  background-color: #EE978A;
+  margin: 0;
+  padding: 0;
+}
+
   .header {
     display: flex;
     flex-direction: row;
@@ -58,12 +70,12 @@ html {
     }
     .right-header{
       font-size: 24px;
-      width: 100%;
       justify-content: center;
-      padding: 0 12% 4px 8%;
+      width: 100%;
+      padding: 0 12% 8px 6%;
     }
     .right-item{
-      padding-left: 8%;
+      padding-left: 30px;
     }
   }
   
@@ -91,18 +103,6 @@ html {
     color: #EC9C21;
   } 
   
-  body#page1{
-    background-color:#F4F2EA;
-    margin: 0;
-    padding: 0;
-  }
-
-  body#page2{
-    background-color: #EE978A;
-    margin: 0;
-    padding: 0;
-  }
-
 .intro {
   display: flex;
   max-width: 100%;
@@ -293,7 +293,6 @@ img:hover {
 }
 @media screen and (min-width: 540px) and (max-width: 940px)
 {
-
   .projects{
     width: 68%;
     padding: 26px 0 0 18%;
